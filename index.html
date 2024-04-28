@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paint Website</title>
+<style>
+body {
+background-color: lavender;
+}
+
+header {
+background-color: purple;
+padding: 30px;
+text-align: right;
+}
+
+footer {
+background-color: purple;
+padding: 20px;
+text-align: center;
+color: white;
+}
+
+h1 {
+color: purple;
+}
+
+.product {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 16px;
+margin-bottom: 16px;
+}
+
+.button {
+background-color: purple;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+  a {
+        color: white;
+        text-decoration: none;
+    }
+
+</style>
+
+<script>
+function addToCart(product) {
+alert("Added " + product + " to cart!");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<button class="button">Account</button>
+<button class="button">Cart</button>
+</header>
+
+<h1>Art Supplies</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Supplies</a>
+<a href="#">Sign In</a>
+</nav>
+<label for="search">Search:</label>
+<input type="text" placeholder="Search..">
+
+<p>Welcome to our art supplies store! Browse our selection of paints, brushes, canvases and more.</p>
+
+<div class="product">
+<h2>Oil Paints</h2>
+<img src="paints.jpg" alt="Product1">
+<p>A set of 12 oil paints in a carrying case.</p>
+<p>$29.99</p>
+<button class="button" onclick="addToCart('Oil Paints')">Add to Cart</button>
+</div>
+
+<div class="product">
+<h2>Acrylic Brushes</h2>
+<img src="brushes.jpg" alt="Product2">
+<p>Set of 10 acrylic brushes in various sizes.</p>
+<p>$19.99</p>
+<button class="button" onclick="addToCart('Acrylic Brushes')">Add to Cart</button>
+</div>
+
+<footer>
+<p>Copyright 2023</p>
+<p>Follow us:
+<a href="https://www.facebook.com">Facebook</a> |
+<a href="https://www.twitter.com">Twitter</a> |
+<a href="https://www.instagram.com">Instagram</a></p>
+</footer>
+
+</body>
+</html>
